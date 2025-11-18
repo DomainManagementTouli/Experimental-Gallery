@@ -120,6 +120,13 @@
             height: 100%;
             object-fit: cover;
         }
+
+        /* Option B: show whole image, centered with optional letterboxing */
+        img.contain-center {
+            object-fit: contain;
+            object-position: center center;
+            background: #000; /* looks intentional for letterboxed images */
+        }
         
         img:hover {
             filter: grayscale(0);
@@ -175,13 +182,16 @@
     <div class="container">
         <div id="carousel">
             <figure>
-                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Mountain landscape">
+                <img src="fQD.png" alt="fQDLogo" class="contain-center">
+            </figure>
+             <figure>
+                <img src="innovoid.png" alt="innovoidLogo" class="contain-center">
             </figure>
             <figure>
-                <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Snowy forest">
+                <img src="BTS.png" alt="BTSLogo" class="contain-center">
             </figure>
             <figure>
-                <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Forest path">
+                <img src="hbenlogo.png" alt="HBENLogo" class="contain-center">
             </figure>
             <figure>
                 <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Lake view">
