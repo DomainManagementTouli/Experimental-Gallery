@@ -19,18 +19,20 @@
         }
         
         html,
-        body {
-            min-height: 100%;
+        img {
+            cursor: pointer;
+            transition: filter .35s ease, box-shadow .35s ease, transform .35s ease;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: none; /* show images in full color by default */
+            box-shadow: none;
         }
-        
-        body {
-            background-image: radial-gradient(mintcream 0%, lightgray 100%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            padding: 20px;
+
+        /* Hover: pause (handled by #carousel:hover), dim and add a green glow */
+        img:hover {
+            filter: brightness(0.82);
+            box-shadow: 0 0 18px rgba(0,255,150,0.65);
         }
         
         h1 {
@@ -194,7 +196,7 @@
                 <img src="hbenlogo.png" alt="HBENLogo" class="contain-center">
             </figure>
             <figure>
-                <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Lake view">
+                <img src="resumeslogo.png" alt="resumeslogo" class="contain-center">
             </figure>
             <figure>
                 <img src="https://images.unsplash.com/photo-1464822759844-d2d1375d5eb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Mountain range">
