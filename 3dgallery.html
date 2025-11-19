@@ -175,31 +175,19 @@
     <div class="container">
         <div id="carousel">
             <figure>
-                <img src="fQD.png" alt="fQDLogo" class="contain-center">
+                <a href="index.html"><img src="fQD.png" alt="fQDLogo" class="contain-center"></a>
             </figure>
              <figure>
-                <img src="innovoid.png" alt="innovoidLogo" class="contain-center">
+                <a href="innoresearch.html"><img src="innovoid.png" alt="innovoidLogo" class="contain-center"></a>
             </figure>
             <figure>
-                <img src="BTS.png" alt="BTSLogo" class="contain-center">
+                <a href="https://blossomstechservice.github.io/blossomstechservice/index.html" target="_blank" rel="noopener noreferrer"><img src="BTS.png" alt="BTSLogo" class="contain-center"></a>
             </figure>
             <figure>
-                <img src="hbenlogo.png" alt="HBENLogo" class="contain-center">
+                <a href="hben.html"><img src="hbenlogo.png" alt="HBENLogo" class="contain-center"></a>
             </figure>
             <figure>
-                <img src="resumeslogo.png" alt="resumeslogo" class="contain-center">
-            </figure>
-            <figure>
-                <img src="https://images.unsplash.com/photo-1464822759844-d2d1375d5eb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Mountain range">
-            </figure>
-            <figure>
-                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Foggy mountains">
-            </figure>
-            <figure>
-                <img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Valley view">
-            </figure>
-            <figure>
-                <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Autumn landscape">
+                <a href="resumegallery.html"><img src="resumeslogo.png" alt="resumeslogo" class="contain-center"></a>
             </figure>
             
         </div>
@@ -210,20 +198,8 @@
     </div>
 
     <script>
-        // The animation is handled entirely by CSS
-        // No JavaScript is required for the basic functionality
-        
-        // Optional: Add click functionality to open images in full size
-        document.addEventListener('DOMContentLoaded', function() {
-            const images = document.querySelectorAll('#carousel img');
-            
-            images.forEach(img => {
-                img.addEventListener('click', function() {
-                    const originalSrc = this.src.replace(/&w=\d+&q=\d+/, '').replace('auto=format&fit=crop&', '');
-                    window.open(originalSrc, '_blank');
-                });
-            });
-        });
+        // Navigation is handled by anchor links wrapped around images.
+        // No JS click handler is required here.
     </script>
 </body>
 </html>
