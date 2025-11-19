@@ -19,20 +19,8 @@
         }
         
         html,
-        img {
-            cursor: pointer;
-            transition: filter .35s ease, box-shadow .35s ease, transform .35s ease;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            filter: none; /* show images in full color by default */
-            box-shadow: none;
-        }
-
-        /* Hover: pause (handled by #carousel:hover), dim and add a green glow */
-        img:hover {
-            filter: brightness(0.82);
-            box-shadow: 0 0 18px rgba(0,255,150,0.65);
+        body {
+            min-height: 100%;
         }
         
         h1 {
@@ -114,13 +102,15 @@
             transform: rotateY(320deg) translateZ(288px);
         }
         
+        /* Image defaults: show in color and support green glow hover */
         img {
-            filter: grayscale(1);
             cursor: pointer;
-            transition: all .5s ease;
+            transition: filter .35s ease, box-shadow .35s ease, transform .35s ease;
             width: 100%;
             height: 100%;
             object-fit: cover;
+            filter: none; /* show images in full color by default */
+            box-shadow: none;
         }
 
         /* Option B: show whole image, centered with optional letterboxing */
@@ -129,10 +119,11 @@
             object-position: center center;
             background: #000; /* looks intentional for letterboxed images */
         }
-        
+
+        /* Hover: pause (handled by #carousel:hover), dim and add a green glow */
         img:hover {
-            filter: grayscale(0);
-            transform: scale(1.2, 1.2);
+            filter: brightness(0.82);
+            box-shadow: 0 0 18px rgba(0,255,150,0.65);
         }
         
         @keyframes rotation {
